@@ -1,0 +1,56 @@
+.select-modal {
+  display: none;
+}
+.select-modal-container {
+  display: inline-block;
+  min-width: 150px;
+  position: relative;
+  cursor: pointer;
+}
+
+.select-label {
+  position: relative;
+  padding: 7px 18px 7px 10px;
+  border-bottom: 1px solid #ccc;
+}
+
+.select-label:after {
+  content: "\276F";
+  position: absolute;
+  right: 5px;
+  top: 30%;
+  height: 18px;
+  transform: rotate(90deg);
+  font-size: 12px;
+}
+
+.selected-text {
+  padding: 7px 10px;
+}
+
+.select-modal-container ul {
+  box-shadow: 0px 1px 3px 1px #ccc;
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  position: absolute;
+  top: 0;
+  left: 0;
+  min-width: 100%;
+  z-index: 1;
+  display: none;
+}
+
+.select-modal-container.active ul {
+  display: block;
+}
+
+.select-modal-container li {
+  padding: 7px 10px;
+  background-color: #fff;
+  cursor: pointer;
+}
+
+.select-modal-container li:hover {
+  background-color: #eee;
+}
